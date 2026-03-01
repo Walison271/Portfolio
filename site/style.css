@@ -16,6 +16,30 @@ header li{
     margin: 2%;
     list-style-type: none;
 }
+header .nav-text{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+header .nav-text .title{
+    position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+header .nav-text .title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+header .nav-text .title:hover::after {
+  width: 100%;
+}
+
 header .nav-text ul{
     display: flex;
     justify-content: space-evenly;
@@ -24,6 +48,7 @@ header .nav-text ul{
 
     padding: 2%;
 }
+
 header.nav-text ul li{
     list-style-type: none;
     padding: 15px;
@@ -43,9 +68,13 @@ header address .body-nav-contact{
     padding: 2%;
     margin: 2%;
  
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: flex;justify-content: space-evenly;align-items: center;flex-wrap: wrap;
+
+    padding: 5%;
+
+}
+header address .body-nav-contact li{
+    padding: 1%;
 
 }
 header address ul li{
@@ -54,7 +83,7 @@ header address ul li{
 
 
 /* Conteudo Principal */
-.main .section-presentation h1{
+.main .section-presentation h2{
     margin: 2%;
     background: -webkit-linear-gradient(0deg,rgba(215, 182, 255, 1) 0%, rgba(22, 0, 221, 1) 50%);
     -webkit-background-clip: text;
@@ -74,7 +103,6 @@ header address ul li{
     display: flex;
     align-items: center;
 }
-
 .main .section-professional-experience h2{
     display: flex;
     justify-content: end;
@@ -94,9 +122,7 @@ header address ul li{
 }
 
 .main .section-professional-experience .text-photo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+ 
 }
 .main .section-professional-experience .text-photo img{
     border-radius: 10px;

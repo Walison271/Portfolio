@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portifólio</title>
-<!-- Importações CSS -->
+    <title>Walison Nascimento</title>
+    <link rel="icon" type="image/x-icon" href="./logo/download.png">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Importações CSS -->
     <style>   
+        @import url(site/bootstrap.css);
         @import url(site/style.css);
         @font-face {
             font-family: montserrat;
-            src: url(/Site/Montserrat/Montserrat-Italic-VariableFont_wght.ttf);
+            src: url(./site/Montserrat/Montserrat-Italic-VariableFont_wght.ttf);
             }     
     </style>
 </head>
@@ -18,25 +22,25 @@
     <header>
             <nav class="nav-text">
                 <ul>
-                    <li>Apresentação</li>
-                    <li>Experiências profissionais</li>
-                    <a href="#projetos"><li>Projetos</li></a>
-                    <a href="#habilidades"><li>Habilidades</li></a>
-                    <li>Minhas Ferramentas</li>
-                    <li>Licenças e Certificados</li>    
+                    <li class="title">Apresentação</li>
+                    <li class="title">Experiências profissionais</li>
+                    <a  class="title" href="#projetos"><li>Projetos</li></a>
+                    <a  class="title" href="#habilidades"><li>Habilidades</li></a>
+                    <li class="title">Minhas Ferramentas</li>
+                    <li class="title">Licenças e Certificados</li>    
                 </ul>
             </nav>
             
             <address>
-                <div class="body-nav-contact">
-                    <ul style="display: flex;">
-                        <li>55+ 31 9 71370234</li>
-                        <li>walisonn470@gmail.com</li>
-                    </ul> 
-                        <figure>
-                            <img src="" alt="Instagram">
-                            <img src="" alt="Linkedin">
-                        </figure>
+                <img src="./logo/1741046908227.jpg" width="150px">
+                <div class="body-nav-contact" style="display: flex;justify-content: space-evenly;align-items: center;flex-wrap: wrap;
+
+    padding: 1%;">
+                        <li><i class="bi bi-telephone-fill"></i> 55+ 31 9 71370234</li>
+                        <li><i class="bi bi-envelope-at-fill"></i> walisonn470@gmail.com</li> 
+                       <li><i class="bi bi-instagram"> Instagram</i></li>
+                       <li><i class="bi bi-linkedin"> Linkedin</i></li>
+                    
                 </div>
                         <figure>
                             <img src="./logo/download.png" alt="LOGO" style="border-radius: 10px;">
@@ -46,11 +50,12 @@
 
     <main class="main">
             <section class="section-presentation">
-                <h1>Front-End / Suporte Técnico N1</h1>
+                <h2>Suporte Técnico/ Entusiasta na programação/ Designer</h2>
                 <p>
-                Me chamo Walison Nascimento, tenho 19 anos e realizei estágio no distrito do Cartório do Barreiro como suporte técnico.
-                Sou formado em Técnico de Informática ministrado pelo SEEMG realizado pela Instituição Pedro Franca,
-                estudei durante 3 semestres e ganhei conhecimento geral sobre computadores, redes, empreendedorismo, Microsoft Office e sistemas, também tive a introdução na programação em geral. 
+                Me chamo Walison Nascimento, tenho 20 anos e realizei estágio no distrito do Cartório do Barreiro como suporte técnico.
+                Sou formado em Técnico de Informática ministrado pelo SEEMG realizado pela Instituição Pedro Franca.
+                Me chamo Walison Nascimento, tenho 20 anos e hoje sou formado em técnico de informática pela instituição SEEMG
+                <br> Atualmente Cursando Ciências da Computação 3° semestre pela instituição Estácio.
                 </p>
             </section>
             
@@ -59,11 +64,12 @@
             <section class="section-professional-experience">
                 <h2>Experiências Profissionais</h2>
                 <div class="text-photo">
-                    <img src="./logo/1741046908227.jpg" alt="Retrato" width="20%">
+                    <br><br>
+                <p><b>Estagiário auxiliar TI - Cartório do barreiro</b></p>
+            <div style="display: flex; justify-content: center;align-items: center;">
                 <ul>
-                    <p>
-                        Fui estagiário em suporte técnico/auxiliar de cartório e realizei funções como:
-                    </p>
+                    
+                <br>
                 <br>
                     <li>manutenção preventiva e corretiva de hardware e software, assegurando o desempenho e a estabilidade dos sistemas.</li>
                 <br>            
@@ -81,8 +87,44 @@
                 <br>
                     <li>Realizei atendimento ao público realizando funções de abertura de firma, reconhecimento de firma e autenticação de documentos no setor de notas do cartório</li>
                 </ul>
+                <img width="250px" height="250px" src="./logo/cartrio_do_barreiro_logo.jpeg" alt="">
+            </div>
+                <br><br><br><br><br><br><br>
+                <b>Estagiário Suporte técnico TI - Openix Soluções em Software</b>
+                <div style="display: flex; justify-content: center;align-items: center;">
+                    <img width="250px" height="250px" src="./logo/image 2.png" alt="">
+                    <ul>
+                    <p align="center">
+                        
+                    </p>
+        
+                <br>
+                <br>
+                    <li>Manutenção e configuração de computadores e periféricos, garantindo desempenho e funcionamento adequado dos equipamentos.</li>
+                <br>            
+                    <li>Suporte técnico aos colaboradores (presencial e remoto), realizando diagnóstico e resolução de incidentes relacionados a hardware, software e conectividade.</li>
+                <br>        
+                    <li>Suporte básico a sistemas de telefonia, auxiliando na configuração e resolução de falhas operacionais.</li>
+                <br>    
+                    <li>Gestão de acessos de usuários, incluindo administração de contas Google, sistemas internos e aplicação de políticas via GPO.</li>
+                <br>    
+                    <li>Conhecimentos básicos em administração de ambientes Linux, com foco em gerenciamento de usuários e permissões.</li>
+                <br>
+                    <li>Estudo e prática inicial de automação com Ansible, visando aprimoramento técnico e padronização de processos.</li>                        
+                <br>
+                    <li>Controle e atualização do inventário e estoque de ativos de TI.</li>
+                <br>
+                    <li>Elaboração de orçamentos para aquisição de equipamentos de TI, considerando necessidades do setor.</li>
+                <br>
+                    <li>Sugestão de melhorias no ambiente de TI, apoiando a evolução contínua da infraestrutura.</li>
+                 <br>
+                    <li>Apoio às rotinas gerais da equipe de infraestrutura.</li>
+
+                </ul>
+                </div>
                 </div>
             </section>
+            
             
             <section class="section-Myprojects">
                 <h2 id="projetos">Projetos</h2>
@@ -157,15 +199,13 @@
             
             <section class="section-my-tools">
                 <h2>Minhas Ferramentas online</h2>
-                    <figure>
-                        <img src="" alt="HTML5">
-                        <img src="" alt="CSS3">
-                        <img src="" alt="JS">
-                        <img src="" alt="NODE.JS">
-                        <img src="" alt="TYPESCRIPT">
-                        <img src="" alt="Bootstrap">
-                        <img src="" alt="Python">
-                        <img src="" alt="Figma">
+                    <figure style="padding: 5%;">
+                        <img width="150px" height="150px"  src="./image-tools/Html.png" alt="HTML5">
+                        <img width="150px" height="150px"  src="./image-tools/Css.png" alt="CSS3">
+                        <img width="150px" height="150px"  src="./image-tools/JS.png" alt="JS">
+                        <img width="150px" height="150px"  src="./image-tools/Bootstrap.png" alt="Bootstrap">
+                        <img width="150px" height="150px"  src="./image-tools/Python.png" alt="Python">
+                        <img width="150px" height="150px"  src="./image-tools/Figma.png" alt="Figma">
                     </figure>
             </section>
             
@@ -207,35 +247,6 @@
     observer.observe(progress);
   });
 </script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-<!-- 
-<script>
-    var nome = string(window.prompt('seu nome'))
-    var idade = Number(window.prompt('sua idade')) 
-    var nota = Number(window.prompt('sua nota'))
-
-    document.writeln(`Eu me chamo ${nome} tenho ${idade} e tire uma nota ${nota}`)
-
-let numero = 10
-if(numero>5) {
-    document.write('O numero é maior que 5')
-}
-else{
-    document.write('O numero é menor que 5')
-}
-
-
-
-</script>  -->
