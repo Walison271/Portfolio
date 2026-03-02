@@ -1,0 +1,34 @@
+@media (max-width: 900px) {
+    .professional-experience{
+        display: grid;
+    }
+    .professional-experience img{
+        margin: 15%;
+
+    }
+    header .nav-text ul{
+    display: block;
+    justify-items: center;
+}
+    header .nav-text ul li{
+    margin: 5%;        
+    }
+    header address .body-nav-contact li{
+        display: block;
+}
+    header address {
+        display: block;
+        margin-bottom: 20%;
+
+}    header address img{
+        display: none;
+}
+header .nav-text .title::after {
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background: white;
+}
+}

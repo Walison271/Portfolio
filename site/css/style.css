@@ -1,0 +1,59 @@
+header li{
+    margin: 2%;
+    list-style-type: none;
+}
+header .nav-text{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+header .nav-text ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding: 2%;
+}
+
+header.nav-text ul li{
+    list-style-type: none;
+    padding: 15px;
+    font-weight: 200;
+}
+header address{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header address .body-nav-contact{
+    background: #373737;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    
+    padding: 2%;
+    margin: 2%;
+ 
+    display: flex;justify-content: space-evenly;align-items: center;flex-wrap: wrap;
+
+}
+header address .body-nav-contact li{
+    display:flex;
+
+}
+header address ul li{
+    padding-right: 10px;
+}
+.professional-experience{
+    padding: 5%;
+    display: flex;
+    align-items: center;
+}
+/* Conteudo Principal */
+
+footer ul{
+    list-style-type:none;
+    display: flex;
+    justify-content: space-around;
+
+}
