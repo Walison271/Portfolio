@@ -31,4 +31,14 @@ header .nav-text .title::after {
   height: 2px;
   background: white;
 }
+
+}
+@media (max-width: 1400px) {
+.cards-experience{
+    display: block;
+}
+.professional-experience{
+    height: 100%;
+    width: 100%;
+}
 }

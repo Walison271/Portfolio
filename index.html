@@ -15,15 +15,31 @@
      <link rel="stylesheet" type="text/css" href="./site/css/style.css">
      <link rel="stylesheet" type="text/css" href="./site/css/resolution.css">
     <style>   
-        @font-face {font-family: montserrat; src: url(./site/Montserrat/Montserrat-Italic-VariableFont_wght.ttf);}     
+        @font-face {font-family: 'KyivType'; src: url(./site/fonts/Kyvtype/Dmitry\ Rastvortsev\ -\ KyivType\ Sans\ Thin.otf);}
+        @font-face {font-family: 'Outfit'; src: url(./site/fonts/outfit/static/Outfit-Thin.ttf);}
+        h3{
+            font-family: 'KyivType';
+        }
+        p, a{font-family: 'Outfit';}     
     </style>
 </head>
 <body>
+
+<div class="linhas-container">
+    <div class="linha linha-azul"></div>
+    <div class="linha linha-roxa"></div>
+    <div class="linha linha-cinza-1"></div>
+    <div class="linha linha-cinza-2"></div>
+    <div class="linha linha-cinza-3"></div>
+  </div>
+
+
+
     <header>
-        <nav class="nav-text">
+        <nav class="nav-text" style="margin-bottom: 5%;">
             <ul>
                 <li><a class="title" href="#projetos">Apresentação</li></a>
-                <li><a class="title" href="#projetos">Experiências profissionais</li></a>
+                <li><a class="title" href="#Experiência">Experiências profissionais</li></a>
                 <li><a class="title" href="#projetos">Projetos</a>
                 <li><a class="title" href="#habilidades">Habilidades</a>
                 <li><a class="title" href="#projetos">Minhas Ferramentas</li></a>
@@ -31,64 +47,50 @@
                 </ul>
             </nav>
             
-            <address>
-                <img src="./img/logo/1741046908227.jpg" width="110px">
-                <div class="body-nav-contact">
-                   <li><i class="bi bi-telephone-fill"></i>55+ 31 9 71370234</li>
-                   <li><i class="bi bi-envelope-at-fill"></i>walisonn470@gmail.com</li> 
-                   <li><i class="bi bi-instagram"></i>Instagram</li>
-                   <li><i class="bi bi-linkedin"></i>Linkedin</li>
-                    
-                </div>
-                        <figure>
-                            <img src="./img/logo/download.png" alt="LOGO" style="border-radius: 10px;">
-                        </figure>
-            </address>
+
     </header>
 
-    <main class="main">
-            <section>
-                <h3>Suporte Técnico/ Entusiasta na programação/ Designer</h3>
-                <p>
-                Me chamo Walison Nascimento, tenho 20 anos e realizei estágio no distrito do Cartório do Barreiro como suporte técnico.
-                Sou formado em Técnico de Informática ministrado pelo SEEMG realizado pela Instituição Pedro Franca.
-                Me chamo Walison Nascimento, tenho 20 anos e hoje sou formado em técnico de informática pela instituição SEEMG Atualmente Cursando Ciências da Computação 3° semestre pela instituição Estácio.
-                </p>
+    <main class="main" id="sentinel">
+            <section style="margin-bottom: 20%;">
+                <h3 style="font-size: 50px; text-align: end;margin-bottom: 15%;">Suporte Técnico |Estudante de<br>  Ciência da Computação</h3>
+                <p style="font-size: 30px;">Transformando problemas técnicos em soluções simples. </p>
             </section>
             
-            <section>
-                <h3 align="end">Experiências Profissionais</h3>
+             <h3 id="Experiência" style="font-size: 30px; text-align: center;margin-bottom: 10%">Experiências Profissionais</h3>   
 <!-- Experiência 1 -->
-                <p><b>Estagiário auxiliar TI - Cartório do barreiro</b></p>
-            <div class="professional-experience">
-                <ul>
-                    <li>manutenção preventiva e corretiva de hardware e software, assegurando o desempenho e a estabilidade dos sistemas.</li>
-                    <li>formatação de máquinas.</li>    
-                    <li>instalação de programas e sistemas e atualizações necessárias.</li>
-                    <li>Prestei suporte interno aos usuários, orientando-os sobre dúvidas relacionadas aos softwares e sistemas utilizados.</li>
-                    <li>Fui responsável por realizar configurações básicas de rede, bem como identificar e corrigir problemas técnicos inesperados, garantindo o funcionamento contínuo das operações. Instalação e configuração de impressoras</li>
-                    <li>Acesso remoto aos usuários para manutenção e correção de sistemas/configurações</li>                        
-                    <li>Realizei atendimento ao público realizando funções de abertura de firma, reconhecimento de firma e autenticação de documentos no setor de notas do cartório</li>
-                </ul>
-                <img width="250px" height="250px" src="./img/logo/cartrio_do_barreiro_logo.jpeg" alt="">
+  
+    <section class="cards-experience">
+        <div class="professional-experience">
+        <div style="display: flex;align-items: center;">
+            <img style="margin: 5%;" width="100px" height="100px" src="./img/logo/image 2.png" alt="">
+            <p style="font-size: 25px;">Estagiário Suporte técnico TI - Openix Soluções em Software</p>
+
+        </div>
+            <p>Manutenção preventiva e corretiva de hardware e software Formatação e configuração de máquinas
+Instalação e atualização de sistemas e programas
+Suporte interno aos usuários (presencial e remoto)
+Configurações básicas de rede e resolução de incidentes
+Instalação e configuração de impressoras
+Atendimento ao público no setor de notas (abertura e reconhecimento de firma, autenticação de documentos).
+            </p>   
+        </div>
+<!--Experiência 2  -->
+        
+        <div class="professional-experience">
+            <div style="display: flex;align-items: center;">
+            <img style="margin: 5%; border-radius: 10%;" width="100px" height="100px" src="./img/logo/cartrio_do_barreiro_logo.jpeg" alt="">
+            <p style="font-size: 25px;">Estagiário auxiliar TI - Cartório do barreiro</p>
+
             </div>
-            <p><b>Estagiário Suporte técnico TI - Openix Soluções em Software</b></p>
-            <div class="professional-experience">
-                    <img width="250px" height="250px" src="./img/logo/image 2.png" alt="">
-                    <ul>
-                    <li>Manutenção e configuração de computadores e periféricos, garantindo desempenho e funcionamento adequado dos equipamentos.</li>            
-                    <li>Suporte técnico aos colaboradores (presencial e remoto), realizando diagnóstico e resolução de incidentes relacionados a hardware, software e conectividade.</li>        
-                    <li>Suporte básico a sistemas de telefonia, auxiliando na configuração e resolução de falhas operacionais.</li>    
-                    <li>Gestão de acessos de usuários, incluindo administração de contas Google, sistemas internos e aplicação de políticas via GPO.</li>    
-                    <li>Conhecimentos básicos em administração de ambientes Linux, com foco em gerenciamento de usuários e permissões.</li>
-                    <li>Estudo e prática inicial de automação com Ansible, visando aprimoramento técnico e padronização de processos.</li>                        
-                    <li>Controle e atualização do inventário e estoque de ativos de TI.</li>
-                    <li>Elaboração de orçamentos para aquisição de equipamentos de TI, considerando necessidades do setor.</li>
-                    <li>Sugestão de melhorias no ambiente de TI, apoiando a evolução contínua da infraestrutura.</li>
-                    <li>Apoio às rotinas gerais da equipe de infraestrutura.</li>
-                </ul>
-            </div>
-            </section> 
+            <p>Manutenção e configuração de computadores e periféricos
+Suporte técnico presencial e remoto (hardware, software e rede)
+Administração de usuários (Google Workspace, sistemas internos e GPO)
+Suporte básico a telefonia
+Gestão de inventário e ativos de TI
+Orçamentos e apoio à evolução da infraestrutura
+Conhecimentos em Linux e automação com Ansible</p>
+        </div>
+    </section> 
             <section class="section-Myprojects">
                 <h2 id="projetos">Projetos</h2>
                 <div class="section-Myprojects-card">
@@ -180,6 +182,7 @@
             <li class="item2">Linkedin</li>
         </ul>
     </footer>
+
 <script>
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {

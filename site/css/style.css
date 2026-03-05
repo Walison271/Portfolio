@@ -20,33 +20,21 @@ header.nav-text ul li{
     padding: 15px;
     font-weight: 200;
 }
-header address{
+.cards-experience{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
 }
-header address .body-nav-contact{
-    background: #373737;
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
-    
-    padding: 2%;
-    margin: 2%;
- 
-    display: flex;justify-content: space-evenly;align-items: center;flex-wrap: wrap;
 
-}
-header address .body-nav-contact li{
-    display:flex;
-
-}
-header address ul li{
-    padding-right: 10px;
-}
 .professional-experience{
+    height: 450px;
+    width: 700px;
+    border-radius: 20px;
+    background-color: #2E2C30;
+    
+
     padding: 5%;
-    display: flex;
+    margin: 1%;
+    margin-bottom: 10%;
     align-items: center;
 }
 /* Conteudo Principal */
