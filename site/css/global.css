@@ -6,7 +6,8 @@
     scroll-behavior: smooth;
 }
 body{
-    background-color: #191919;
+  background: radial-gradient(circle at 20% 20%, #111 0%, #0a0a0a 70%);
+    align-items: center;
     margin: 1%;
     margin-left: 15%;
     margin-right: 15%;
@@ -27,6 +28,7 @@ body{
     top: 50%;
     transform-origin: center;
     opacity: 0.8; /* Leve transparência para mesclar melhor */
+    
   }
 
   /* 4. Linhas específicas (Cores, Espessuras e Ângulos) */
@@ -36,6 +38,7 @@ body{
     height: 2px;
     background: linear-gradient(90deg, transparent, #1a237e, #3f51b5, transparent);
     transform: translateY(-20vh) rotate(40deg);
+     
   }
 
   .linha-roxa {
@@ -71,20 +74,4 @@ h3{
     background: -webkit-linear-gradient(0deg,rgba(215, 182, 255, 1) 50%, rgba(22, 0, 221, 1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-.teste{
-  font-size: 30px;
-
-  border-radius: 360px;
-
-  display: flex; 
-  justify-content: center;
-  align-items: center;
-    
-  position:fixed;
-  left: 50%;
-}
-.teste.show{
-  opacity: 0;
 }

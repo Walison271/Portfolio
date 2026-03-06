@@ -14,7 +14,11 @@ header .nav-text ul{
 
     padding: 2%;
 }
-
+title-primary{
+    font-size: 50px;
+    text-align: end;
+    margin-bottom: 15%;
+}
 header.nav-text ul li{
     list-style-type: none;
     padding: 15px;

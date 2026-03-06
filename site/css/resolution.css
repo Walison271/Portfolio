@@ -11,17 +11,7 @@
     justify-items: center;
 }
     header .nav-text ul li{
-    margin: 5%;        
-    }
-    header address .body-nav-contact li{
-        display: block;
-}
-    header address {
-        display: block;
-        margin-bottom: 20%;
-
-}    header address img{
-        display: none;
+    margin-top: 25%;     
 }
 header .nav-text .title::after {
   position: absolute;
