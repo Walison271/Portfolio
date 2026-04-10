@@ -1,0 +1,179 @@
+/* =========================
+   SEÇÕES
+========================= */
+.section-label {
+    display: block;
+    font-family: 'Syne', sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: rgba(167, 139, 250, 0.6);
+    margin-bottom: 0.75rem;
+}
+
+.section-title {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-weight: 700;
+    color: white;
+    line-height: 1.1;
+}
+
+/* =========================
+   CARDS DE EXPERIÊNCIA
+========================= */
+.exp-card {
+    background: rgba(19, 19, 26, 0.8);
+    border: 1px solid rgba(30, 30, 46, 0.8);
+    border-radius: 16px;
+    padding: 1.5rem;
+    backdrop-filter: blur(10px);
+    transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.exp-card:hover {
+    border-color: rgba(124, 58, 237, 0.4);
+    transform: translateY(-4px);
+    box-shadow: 0 20px 60px rgba(124, 58, 237, 0.1);
+}
+
+.exp-card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* =========================
+   CARDS DE PROJETO
+========================= */
+.project-card {
+    cursor: pointer;
+}
+
+.project-thumb {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    background: rgba(19, 19, 26, 0.8);
+    border: 1px solid rgba(30, 30, 46, 0.8);
+    aspect-ratio: 16/10;
+}
+
+.project-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease, filter 0.4s ease;
+    filter: brightness(0.7);
+}
+
+.project-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 10, 15, 0.75);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-thumb img {
+    transform: scale(1.06);
+    filter: brightness(0.5);
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-link {
+    font-family: 'Syne', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0.5rem 1.2rem;
+    border-radius: 999px;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.project-link:hover {
+    background: rgba(124, 58, 237, 0.3);
+    border-color: rgba(167, 139, 250, 0.6);
+}
+
+/* =========================
+   BARRAS DE HABILIDADE
+========================= */
+.bar {
+    width: 100%;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.progress {
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90deg, #7c3aed, #c084fc);
+    border-radius: 999px;
+    transition: width 1.8s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+}
+
+.progress::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #c084fc;
+    box-shadow: 0 0 8px #a78bfa;
+}
+
+/* =========================
+   CARROSSEL DE FERRAMENTAS
+========================= */
+.tools-carousel {
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+}
+
+.tools-track {
+    display: flex;
+    width: max-content;
+    animation: toolsScroll 30s linear infinite;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.tools-track img {
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: contain;
+    opacity: 0.5;
+    filter: grayscale(1);
+    transition: opacity 0.3s, filter 0.3s;
+    flex-shrink: 0;
+}
+
+.tools-track img:hover {
+    opacity: 1;
+    filter: grayscale(0);
+}
+
+@keyframes toolsScroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+}

@@ -1,209 +1,330 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Walison Nascimento</title>
-    <link rel="icon" type="image/x-icon" href="./img/logo/download.png">
-    <!-- Bootstrap -->
+    <link rel="icon" type="image/x-icon" href="./assets/img/content/download.png">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <!-- Css -->
-     <link rel="stylesheet" type="text/css" href="./site/css/animation.css">
-     <link rel="stylesheet" type="text/css" href="./site/css/global.css">
-     <link rel="stylesheet" type="text/css" href="./site/css/components.css">
-     <link rel="stylesheet" type="text/css" href="./site/css/style.css">
-     <link rel="stylesheet" type="text/css" href="./site/css/resolution.css">
-    <style>   
-        @font-face {font-family: 'KyivType'; src: url(./site/fonts/Kyvtype/Dmitry\ Rastvortsev\ -\ KyivType\ Sans\ Thin.otf);}
-        @font-face {font-family: 'Outfit'; src: url(./site/fonts/outfit/static/Outfit-Thin.ttf);}
-        h3{
-            font-family: 'KyivType';
+
+    <!-- CSS Próprio -->
+    <link rel="stylesheet" href="./src/css/animation.css">
+    <link rel="stylesheet" href="./src/css/global.css">
+    <link rel="stylesheet" href="./src/css/components.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/resolution.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        display: ['Syne', 'sans-serif'],
+                        body: ['DM Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        'brand-purple': '#7c3aed',
+                        'brand-violet': '#a78bfa',
+                        'brand-deep': '#0a0a0f',
+                        'brand-card': '#13131a',
+                        'brand-border': '#1e1e2e',
+                    }
+                }
+            }
         }
-        p, a{font-family: 'Outfit';}     
+    </script>
+
+    <!-- Fontes Locais -->
+    <style>
+        @font-face {
+            font-family: 'KyivType';
+            src: url('./assets/fonts/Kyvtype/Dmitry Rastvortsev - KyivType Sans Thin.otf');
+        }
     </style>
-
 </head>
-<body>
-<div class="linhas-container">
-    <div class="linha linha-azul"></div>
-    <div class="linha linha-roxa"></div>
-    <div class="linha linha-cinza-1"></div>
-    <div class="linha linha-cinza-2"></div>
-    <div class="linha linha-cinza-3"></div>
-  </div>
 
+<body class="bg-brand-deep text-white font-body antialiased">
 
-    <header>
-        <nav  class="nav-text" style="margin-bottom: 5%;">
-            <ul>
-                <li><a class="title" href="#projetos">Apresentação</li></a>
-                <li><a class="title" href="#Experiência">Experiências profissionais</li></a>
-                <li><a class="title" href="#projetos">Projetos</a>
-                <li><a class="title" href="#habilidades">Habilidades</a>
-                <li><a class="title" href="#projetos">Minhas Ferramentas</li></a>
-                <li><a class="title" href="#projetos">Licenças e Certificados</li></a>
-                </ul>
-            </nav>
-            
+    <!-- Fundo animado -->
+    <div class="bg-orbs" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
 
+    <!-- Linhas de Background -->
+    <div class="linhas-container" aria-hidden="true">
+        <div class="linha linha-azul"></div>
+        <div class="linha linha-roxa"></div>
+        <div class="linha linha-cinza-1"></div>
+        <div class="linha linha-cinza-2"></div>
+        <div class="linha linha-cinza-3"></div>
+    </div>
+
+    <!-- Cabeçalho -->
+    <header class="sticky top-0 z-50 backdrop-blur-md border-b border-brand-border/50 bg-brand-deep/70">
+        <nav class="nav-text max-w-6xl mx-auto px-6 py-4">
+            <ul class="flex flex-wrap justify-center gap-2 md:gap-6">
+                <li><a class="title font-display text-sm tracking-widest uppercase text-white/70 hover:text-white transition-colors duration-300" href="#apresentacao">Apresentação</a></li>
+                <li><a class="title font-display text-sm tracking-widest uppercase text-white/70 hover:text-white transition-colors duration-300" href="#experiencia">Experiências</a></li>
+                <li><a class="title font-display text-sm tracking-widest uppercase text-white/70 hover:text-white transition-colors duration-300" href="#projetos">Projetos</a></li>
+                <li><a class="title font-display text-sm tracking-widest uppercase text-white/70 hover:text-white transition-colors duration-300" href="#habilidades">Habilidades</a></li>
+                <li><a class="title font-display text-sm tracking-widest uppercase text-white/70 hover:text-white transition-colors duration-300" href="#ferramentas">Ferramentas</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main class="fadeIn" class="main" id="sentinel">
-            <section style="margin-bottom: 20%;">
-                <h3 style="font-size: 50px; text-align: end;margin-bottom: 15%;">Suporte Técnico |Estudante de<br>  Ciência da Computação</h3>
-                <p style="font-size: 30px;">Transformando problemas técnicos em soluções simples. </p>
-            </section>
-            
-             <h3 id="Experiência" style="font-size: 30px; text-align: center;margin-bottom: 10%">Experiências Profissionais</h3>   
-<!-- Experiência 1 -->
-  
-    <section class="cards-experience">
-        <div class="professional-experience">
-        <div style="display: flex;align-items: center;">
-            <img style="margin: 5%;" width="100px" height="100px" src="./img/logo/image 2.png" alt="">
-            <p style="font-size: 25px;">Estagiário Suporte técnico TI - Openix Soluções em Software</p>
+    <main class="fadeIn max-w-5xl mx-auto px-6">
 
-        </div>
-            <p>Manutenção preventiva e corretiva de hardware e software Formatação e configuração de máquinas
-Instalação e atualização de sistemas e programas
-Suporte interno aos usuários (presencial e remoto)
-Configurações básicas de rede e resolução de incidentes
-Instalação e configuração de impressoras
-Atendimento ao público no setor de notas (abertura e reconhecimento de firma, autenticação de documentos).
-            </p>   
-        </div>
-<!--Experiência 2  -->
-        
-        <div class="professional-experience">
-            <div style="display: flex;align-items: center;">
-            <img style="margin: 5%; border-radius: 10%;" width="100px" height="100px" src="./img/logo/cartrio_do_barreiro_logo.jpeg" alt="">
-            <p style="font-size: 25px;">Estagiário auxiliar TI - Cartório do barreiro</p>
+        <!-- Hero -->
+        <section class="min-h-[80vh] flex flex-col justify-center py-24 reveal">
+            <span class="font-display text-xs tracking-[0.3em] uppercase text-brand-violet mb-6 block">Disponível para oportunidades</span>
+            <h1 class="font-display font-extrabold text-5xl md:text-7xl leading-none mb-6 hero-title">
+                Walison<br>
+                <span class="text-gradient">Nascimento</span>
+            </h1>
+            <p class="font-body text-xl md:text-2xl text-white/50 font-light max-w-lg mb-4">
+                Suporte Técnico &amp; Estudante de Ciência da Computação
+            </p>
+            <p class="font-body text-white/30 text-base max-w-md leading-relaxed">
+                Transformando problemas técnicos em soluções simples.
+            </p>
+            <div class="scroll-indicator mt-20" aria-hidden="true">
+                <span></span>
+            </div>
+        </section>
+
+        <!-- Apresentação -->
+        <section id="apresentacao" class="py-20 reveal">
+            <span class="section-label">01 — Sobre</span>
+            <h2 class="section-title">Apresentação</h2>
+            <div class="flex flex-col md:flex-row gap-12 items-center mt-12">
+                <div class="flex-shrink-0">
+                    <img src="./assets/img/content/1741046908227.jpg"
+                         alt="Foto de Walison Nascimento"
+                         class="w-52 h-52 object-cover rounded-2xl grayscale hover:grayscale-0 transition-all duration-700 ring-1 ring-brand-border">
+                </div>
+                <p class="text-white/60 text-lg leading-relaxed font-light">
+                    Sou estudante de Ciência da Computação com interesse em infraestrutura de TI,
+                    automação e arquitetura de sistemas. Tenho experiência prática com ambientes Linux,
+                    redes e configuração de serviços, além de explorar ferramentas voltadas para automação
+                    e gerenciamento de infraestrutura. Meu objetivo é atuar na área de infraestrutura ou
+                    cloud, contribuindo na construção, manutenção e otimização de ambientes tecnológicos
+                    seguros e bem estruturados.
+                </p>
+            </div>
+        </section>
+
+        <!-- Experiências Profissionais -->
+        <section id="experiencia" class="py-20 reveal">
+            <span class="section-label">02 — Carreira</span>
+            <h2 class="section-title">Experiências Profissionais</h2>
+            <div class="grid md:grid-cols-2 gap-6 mt-12">
+
+                <div class="exp-card">
+                    <div class="exp-card-header">
+                        <img src="./assets/img/content/image 2.png" alt="Logo Openix" class="w-10 h-10 object-contain rounded-lg bg-white/5 p-1">
+                        <div>
+                            <p class="font-display font-semibold text-white text-sm">Openix Soluções em Software</p>
+                            <span class="text-white/30 text-xs">Estagiário — Suporte Técnico TI</span>
+                        </div>
+                    </div>
+                    <ul class="mt-4 space-y-2 text-white/50 text-sm leading-relaxed">
+                        <li>→ Manutenção preventiva e corretiva de hardware e software</li>
+                        <li>→ Formatação, configuração e instalação de sistemas</li>
+                        <li>→ Suporte interno presencial e remoto</li>
+                        <li>→ Configurações básicas de rede e resolução de incidentes</li>
+                        <li>→ Atendimento ao público no setor de notas</li>
+                    </ul>
+                </div>
+
+                <div class="exp-card">
+                    <div class="exp-card-header">
+                        <img src="./assets/img/content/cartrio_do_barreiro_logo.jpeg" alt="Logo Cartório do Barreiro" class="w-10 h-10 object-contain rounded-lg bg-white/5 p-1">
+                        <div>
+                            <p class="font-display font-semibold text-white text-sm">Cartório do Barreiro</p>
+                            <span class="text-white/30 text-xs">Estagiário — Auxiliar TI</span>
+                        </div>
+                    </div>
+                    <ul class="mt-4 space-y-2 text-white/50 text-sm leading-relaxed">
+                        <li>→ Manutenção de computadores e periféricos</li>
+                        <li>→ Administração de usuários (Google Workspace e GPO)</li>
+                        <li>→ Suporte técnico presencial e remoto</li>
+                        <li>→ Gestão de inventário e ativos de TI</li>
+                        <li>→ Linux e automação com Ansible</li>
+                    </ul>
+                </div>
 
             </div>
-            <p>Manutenção e configuração de computadores e periféricos
-Suporte técnico presencial e remoto (hardware, software e rede)
-Administração de usuários (Google Workspace, sistemas internos e GPO)
-Suporte básico a telefonia
-Gestão de inventário e ativos de TI
-Orçamentos e apoio à evolução da infraestrutura
-Conhecimentos em Linux e automação com Ansible</p>
-        </div>
-    </section> 
-            <section class="section-Myprojects">
-                <h2 id="projetos">Projetos</h2>
-                <div class="section-Myprojects-card">
-                    <div class="card">
-                    <img src="./img/logo/Group 1.png" alt="Imagem do projeto">
-                    <p>Restaurante</p>
-                    <a href=""><h5>Entrar no github</h5></a>
-                </div>
-                <div class="card">
-                    <img src="./img/logo/Group 1.png" alt="Imagem do projeto">
-                    <p>Barbearia</p>
-                    <a href=""><h5>Entrar no github</h5></a>
-                </div>
-                <div class="card">
-                    <img src="./img/logo/Group 1.png" alt="Imagem do projeto">
-                    <p>E-commerce</p>
-                    <a href=""><h5>Entrar no github</h5></a>
-                </div>
-                </div>
-            </section>
-            
-            <section class="section-my-skills">
-                <h2 id="habilidades">Minhas Habilidades</h2>
-            <div class="skill">
-                <span>Manutenção de computadores</span>
-                <div class="bar">
-                <div class="progress" data-width="100%"></div>
-                </div>
-            </div>
+        </section>
 
-            <div class="skill">
-                <span>Windows</span>
-                <div class="bar">
-                <div class="progress" data-width="70%"></div>
-                </div>
-            </div>
+        <!-- Projetos -->
+        <section id="projetos" class="py-20 reveal">
+            <span class="section-label">03 — Work</span>
+            <h2 class="section-title">Projetos</h2>
+            <div class="grid md:grid-cols-3 gap-6 mt-12">
 
-            <div class="skill">
-                <span>Html&Css</span>
-                <div class="bar">
-                <div class="progress" data-width="65%"></div>
+                <div class="project-card">
+                    <div class="project-thumb">
+                        <img src="./assets/img/content/Group 1.png" alt="Projeto Restaurante">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="bi bi-github mr-2"></i>Ver no GitHub</a>
+                        </div>
+                    </div>
+                    <p class="font-display font-semibold mt-4 text-white/80">Restaurante</p>
+                    <span class="text-white/30 text-xs">HTML · CSS · JS</span>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-thumb">
+                        <img src="./assets/img/content/Group 1.png" alt="Projeto Barbearia">
+                        <div class="project-overlay">
+                            <a href="https://walison271.github.io/Barbearia/" target="_blank" class="project-link"><i class="bi bi-github mr-2"></i>Ver no GitHub</a>
+                        </div>
+                    </div>
+                    <p class="font-display font-semibold mt-4 text-white/80">Barbearia</p>
+                    <span class="text-white/30 text-xs">HTML · CSS · JS</span>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-thumb">
+                        <img src="./assets/img/content/Group 1.png" alt="Projeto E-commerce">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="bi bi-github mr-2"></i>Ver no GitHub</a>
+                        </div>
+                    </div>
+                    <p class="font-display font-semibold mt-4 text-white/80">E-commerce</p>
+                    <span class="text-white/30 text-xs">HTML · CSS · JS</span>
+                </div>
+
             </div>
-                
-            <div class="skill">
-                <span>Redes</span>
-                <div class="bar">
-                <div class="progress" data-width="30%"></div>
+        </section>
+
+        <!-- Habilidades -->
+        <section id="habilidades" class="py-20 reveal">
+            <span class="section-label">04 — Skills</span>
+            <h2 class="section-title">Minhas Habilidades</h2>
+            <div class="mt-12 space-y-6">
+
+                <div class="skill">
+                    <div class="flex justify-between mb-2">
+                        <span class="text-white/70 text-sm font-display tracking-wide">Manutenção de Computadores</span>
+                        <span class="text-white/30 text-xs">100%</span>
+                    </div>
+                    <div class="bar"><div class="progress" data-width="100%"></div></div>
+                </div>
+
+                <div class="skill">
+                    <div class="flex justify-between mb-2">
+                        <span class="text-white/70 text-sm font-display tracking-wide">Windows</span>
+                        <span class="text-white/30 text-xs">70%</span>
+                    </div>
+                    <div class="bar"><div class="progress" data-width="70%"></div></div>
+                </div>
+
+                <div class="skill">
+                    <div class="flex justify-between mb-2">
+                        <span class="text-white/70 text-sm font-display tracking-wide">HTML &amp; CSS</span>
+                        <span class="text-white/30 text-xs">65%</span>
+                    </div>
+                    <div class="bar"><div class="progress" data-width="65%"></div></div>
+                </div>
+
+                <div class="skill">
+                    <div class="flex justify-between mb-2">
+                        <span class="text-white/70 text-sm font-display tracking-wide">Redes</span>
+                        <span class="text-white/30 text-xs">30%</span>
+                    </div>
+                    <div class="bar"><div class="progress" data-width="30%"></div></div>
+                </div>
+
+                <div class="skill">
+                    <div class="flex justify-between mb-2">
+                        <span class="text-white/70 text-sm font-display tracking-wide">JavaScript</span>
+                        <span class="text-white/30 text-xs">20%</span>
+                    </div>
+                    <div class="bar"><div class="progress" data-width="20%"></div></div>
+                </div>
+
+                <div class="skill">
+                    <div class="flex justify-between mb-2">
+                        <span class="text-white/70 text-sm font-display tracking-wide">Linux</span>
+                        <span class="text-white/30 text-xs">20%</span>
+                    </div>
+                    <div class="bar"><div class="progress" data-width="20%"></div></div>
+                </div>
+
+                <div class="skill">
+                    <div class="flex justify-between mb-2">
+                        <span class="text-white/70 text-sm font-display tracking-wide">Banco de Dados</span>
+                        <span class="text-white/30 text-xs">10%</span>
+                    </div>
+                    <div class="bar"><div class="progress" data-width="10%"></div></div>
+                </div>
+
+                <div class="skill">
+                    <div class="flex justify-between mb-2">
+                        <span class="text-white/70 text-sm font-display tracking-wide">Automação</span>
+                        <span class="text-white/30 text-xs">10%</span>
+                    </div>
+                    <div class="bar"><div class="progress" data-width="10%"></div></div>
+                </div>
+
             </div>
-            <div class="skill">
-                <span>javaScript</span>
-                <div class="bar">
-                <div class="progress" data-width="20%"></div>
+        </section>
+
+        <!-- Ferramentas -->
+        <section id="ferramentas" class="py-20 reveal">
+            <span class="section-label">05 — Stack</span>
+            <h2 class="section-title">Minhas Ferramentas</h2>
+            <div class="tools-carousel mt-12">
+                <figure class="tools-track">
+                    <img src="./assets/img/icons/html-svgrepo-com.svg" alt="HTML5">
+                    <img src="./assets/img/icons/css-svgrepo-com.svg" alt="CSS3">
+                    <img src="./assets/img/icons/js-svgrepo-com.svg" alt="JavaScript">
+                    <img src="./assets/img/icons/bootstrap-fill-svgrepo-com.svg" alt="Bootstrap">
+                    <img src="./assets/img/icons/python-127-svgrepo-com.svg" alt="Python">
+                    <img src="./assets/img/icons/figma-svgrepo-com.svg" alt="Figma">
+                    <img src="./assets/img/icons/ansible-svgrepo-com.svg" alt="Ansible">
+                    <img src="./assets/img/icons/semaphore-svgrepo-com.svg" alt="Semaphore">
+                    <img src="./assets/img/icons/ubuntu-svgrepo-com.svg" alt="Ubuntu">
+                    <img src="./assets/img/icons/windows-174-svgrepo-com.svg" alt="Windows">
+                    <!-- Duplicatas para loop contínuo -->
+                    <img src="./assets/img/icons/html-svgrepo-com.svg" alt="HTML5">
+                    <img src="./assets/img/icons/css-svgrepo-com.svg" alt="CSS3">
+                    <img src="./assets/img/icons/js-svgrepo-com.svg" alt="JavaScript">
+                    <img src="./assets/img/icons/bootstrap-fill-svgrepo-com.svg" alt="Bootstrap">
+                    <img src="./assets/img/icons/python-127-svgrepo-com.svg" alt="Python">
+                    <img src="./assets/img/icons/figma-svgrepo-com.svg" alt="Figma">
+                    <img src="./assets/img/icons/ansible-svgrepo-com.svg" alt="Ansible">
+                    <img src="./assets/img/icons/semaphore-svgrepo-com.svg" alt="Semaphore">
+                    <img src="./assets/img/icons/ubuntu-svgrepo-com.svg" alt="Ubuntu">
+                    <img src="./assets/img/icons/windows-174-svgrepo-com.svg" alt="Windows">
+                </figure>
             </div>
-            <div class="skill">
-                <span>linux</span>
-                <div class="bar">
-                <div class="progress" data-width="20%"></div>
-            </div>
-            <div class="skill">
-                <span>Banco de Dados</span>
-                <div class="bar">
-                <div class="progress" data-width="10%"></div>
-            </div>
-            <div class="skill">
-                <span>Automação</span>
-                <div class="bar">
-                <div class="progress" data-width="10%"></div>
-            </div>
-        
-            </section>            
-            
-            <section class="section-my-tools">
-                <h2>Minhas Ferramentas online</h2>
-                    <figure align="center">
-                        <img width="100px" height="100px"  src="./img/image-tools/Html.png" alt="HTML5">
-                        <img width="90px" height="87px"  src="./img/image-tools/Css.png" alt="CSS3">
-                        <img width="100px" height="100px"  src="./img/image-tools/JS.png" alt="JS">
-                        <img width="70px" height="70px"  src="./img/image-tools/Bootstrap.png" alt="Bootstrap">
-                        <img width="70px" height="70px"  src="./img/image-tools/Python.png" alt="Python">
-                        <img width="90px" height="90px"  src="./img/image-tools/Figma.png" alt="Figma">
-                    </figure>
-            </section>
-            
+        </section>
+
     </main>
-    <footer>
-        <ul>
-            <li class="item2">Outros Projetos</li>
-            <li class="item2">Instagram</li>
-            <li class="item2">Linkedin</li>
-        </ul>
+
+    <!-- Rodapé -->
+    <footer class="border-t border-brand-border/50 mt-10 py-8">
+        <p class="text-center text-white/20 font-display text-xs tracking-widest uppercase">
+            &copy; 2026 Walison Nascimento
+        </p>
     </footer>
 
-<script>
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const progress = entry.target;
-        const targetWidth = progress.dataset.width;
+    <script src="./src/js/animation.js"></script>
 
-        progress.style.width = targetWidth;
-
-        // Para não animar de novo toda vez que der scroll:
-        observer.unobserve(progress);
-      }
-    });
-  }, {
-    threshold: 0.5  // Quando 50% da barra aparecer na tela
-  });
-
-  document.querySelectorAll('.progress').forEach(progress => {
-    observer.observe(progress);
-  });
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,125 @@
+/* =========================
+   RESET & GLOBAL
+========================= */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0a0a0f;
+    overflow-x: hidden;
+}
+
+/* =========================
+   TEXTO GRADIENTE
+========================= */
+.text-gradient {
+    background: linear-gradient(135deg, #a78bfa 0%, #7c3aed 50%, #c084fc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* =========================
+   ORBS ANIMADOS
+========================= */
+.bg-orbs {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.12;
+}
+
+.orb-1 {
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, #7c3aed, transparent 70%);
+    top: -200px;
+    left: -200px;
+    animation: orbFloat 20s ease-in-out infinite;
+}
+
+.orb-2 {
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, #2563eb, transparent 70%);
+    bottom: 10%;
+    right: -150px;
+    animation: orbFloat 25s ease-in-out infinite reverse;
+}
+
+.orb-3 {
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, #a78bfa, transparent 70%);
+    top: 50%;
+    left: 40%;
+    animation: orbFloat 18s ease-in-out infinite 5s;
+}
+
+@keyframes orbFloat {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    33%       { transform: translate(40px, -60px) scale(1.05); }
+    66%       { transform: translate(-30px, 40px) scale(0.95); }
+}
+
+/* =========================
+   LINHAS DE BACKGROUND
+========================= */
+.linhas-container {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.linha {
+    position: absolute;
+    width: 200%;
+    left: -50%;
+    top: 50%;
+    transform-origin: center;
+    opacity: 0.4;
+}
+
+.linha-azul {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #3f51b5, transparent);
+    transform: translateY(-20vh) rotate(40deg);
+}
+
+.linha-roxa {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #7b1fa2, transparent);
+    transform: translateY(10vh) rotate(40deg);
+}
+
+.linha-cinza-1 {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #424242, transparent);
+    transform: translateY(-30vh) rotate(-35deg);
+}
+
+.linha-cinza-2 {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #616161, transparent);
+    transform: translateY(15vh) rotate(-35deg);
+}
+
+.linha-cinza-3 {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #333, transparent);
+    transform: translateY(40vh) rotate(-35deg);
+}

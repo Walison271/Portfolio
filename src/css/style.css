@@ -1,0 +1,52 @@
+/* =========================
+   NAV
+========================= */
+header .nav-text .title {
+    position: relative;
+}
+
+header .nav-text .title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -4px;
+    width: 0;
+    height: 1px;
+    background: rgba(167, 139, 250, 0.8);
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+header .nav-text .title:hover::after {
+    width: 100%;
+}
+
+/* =========================
+   HERO
+========================= */
+.hero-title {
+    font-family: 'Syne', sans-serif;
+    line-height: 1;
+    letter-spacing: -0.02em;
+}
+
+/* =========================
+   SCROLL INDICATOR
+========================= */
+.scroll-indicator {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.scroll-indicator span {
+    display: block;
+    width: 1px;
+    height: 60px;
+    background: linear-gradient(to bottom, rgba(167, 139, 250, 0.6), transparent);
+    animation: scrollPulse 2s ease-in-out infinite;
+}
+
+@keyframes scrollPulse {
+    0%, 100% { opacity: 0.3; transform: scaleY(1);   }
+    50%       { opacity: 1;   transform: scaleY(1.2); }
+}
